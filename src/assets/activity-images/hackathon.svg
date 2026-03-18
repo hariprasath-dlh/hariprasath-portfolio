@@ -1,0 +1,30 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#0A0A0A"/>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="230" cy="170" r="180" fill="#FF2A2A" fill-opacity="0.18"/>
+  <circle cx="980" cy="620" r="220" fill="#FF3B3B" fill-opacity="0.14"/>
+  <rect x="118" y="145" width="964" height="510" rx="34" fill="#120909" stroke="#FF3B3B" stroke-opacity="0.25" stroke-width="2"/>
+  <rect x="168" y="220" width="360" height="220" rx="20" fill="#1C1212" stroke="#FF2A2A" stroke-opacity="0.28"/>
+  <rect x="194" y="246" width="308" height="18" rx="9" fill="#FF3B3B" fill-opacity="0.5"/>
+  <rect x="194" y="286" width="218" height="14" rx="7" fill="#F5F5F5" fill-opacity="0.85"/>
+  <rect x="194" y="316" width="262" height="14" rx="7" fill="#A3A3A3" fill-opacity="0.9"/>
+  <rect x="194" y="346" width="240" height="14" rx="7" fill="#A3A3A3" fill-opacity="0.7"/>
+  <rect x="194" y="384" width="120" height="28" rx="14" fill="#FF2A2A" fill-opacity="0.35"/>
+  <rect x="582" y="220" width="332" height="196" rx="24" fill="#1A0E0E" stroke="#FF3B3B" stroke-opacity="0.3"/>
+  <path d="M640 386C661 337 709 304 765 304C820 304 868 337 890 386" stroke="#FF2A2A" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="693" cy="294" r="28" fill="#F5F5F5"/>
+  <circle cx="765" cy="280" r="32" fill="#F5F5F5"/>
+  <circle cx="842" cy="300" r="28" fill="#F5F5F5"/>
+  <rect x="236" y="520" width="728" height="74" rx="22" fill="#130A0A" stroke="#FF2A2A" stroke-opacity="0.18"/>
+  <rect x="276" y="546" width="166" height="18" rx="9" fill="#FF3B3B" fill-opacity="0.45"/>
+  <rect x="474" y="546" width="184" height="18" rx="9" fill="#A3A3A3" fill-opacity="0.65"/>
+  <rect x="686" y="546" width="236" height="18" rx="9" fill="#A3A3A3" fill-opacity="0.45"/>
+  <text x="170" y="190" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="40" font-weight="700">Hackathon Collaboration</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#120707"/>
+      <stop offset="0.55" stop-color="#0D0A0A"/>
+      <stop offset="1" stop-color="#160404"/>
+    </linearGradient>
+  </defs>
+</svg>

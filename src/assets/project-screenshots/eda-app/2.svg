@@ -1,0 +1,22 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0A0A0A"/>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <rect x="116" y="96" width="1368" height="708" rx="32" fill="#120909" stroke="#ff3b3b" stroke-opacity=".25" stroke-width="2"/>
+  <rect x="178" y="154" width="1244" height="112" rx="28" fill="#170c0c"/>
+  <rect x="178" y="314" width="592" height="430" rx="28" fill="#170c0c"/>
+  <rect x="830" y="314" width="592" height="430" rx="28" fill="#170c0c"/>
+  <rect x="238" y="198" width="300" height="18" rx="9" fill="#f5f5f5"/>
+  <rect x="238" y="438" width="448" height="200" rx="24" fill="#130a0a" stroke="#ff3b3b" stroke-opacity=".16"/>
+  <path d="M284 622V492" stroke="#f5f5f5" stroke-width="10" stroke-linecap="round"/>
+  <path d="M356 622V534" stroke="#f5f5f5" stroke-width="10" stroke-linecap="round"/>
+  <path d="M428 622V562" stroke="#f5f5f5" stroke-width="10" stroke-linecap="round"/>
+  <path d="M500 622V510" stroke="#f5f5f5" stroke-width="10" stroke-linecap="round"/>
+  <path d="M572 622V548" stroke="#f5f5f5" stroke-width="10" stroke-linecap="round"/>
+  <path d="M930 622C930 544 994 480 1072 480C1150 480 1214 544 1214 622" stroke="#ff2a2a" stroke-width="14" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1600" y2="900">
+      <stop stop-color="#150808"/>
+      <stop offset="1" stop-color="#170505"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,31 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#0A0A0A"/>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="246" cy="172" r="170" fill="#FF3B3B" fill-opacity="0.16"/>
+  <circle cx="966" cy="606" r="216" fill="#FF2A2A" fill-opacity="0.12"/>
+  <rect x="116" y="126" width="968" height="548" rx="34" fill="#110909" stroke="#FF3B3B" stroke-opacity="0.24" stroke-width="2"/>
+  <text x="174" y="210" fill="#F5F5F5" font-family="Arial, sans-serif" font-size="50" font-weight="800">MSME Innovation Challenge</text>
+  <rect x="170" y="258" width="406" height="334" rx="28" fill="#191010" stroke="#FF2A2A" stroke-opacity="0.24"/>
+  <rect x="218" y="314" width="138" height="138" rx="28" fill="#FF2A2A" fill-opacity="0.2"/>
+  <path d="M286 340V426" stroke="#F5F5F5" stroke-width="12" stroke-linecap="round"/>
+  <path d="M244 382H328" stroke="#F5F5F5" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="286" cy="382" r="60" stroke="#F5F5F5" stroke-opacity="0.55" stroke-width="8"/>
+  <rect x="396" y="322" width="126" height="18" rx="9" fill="#FF3B3B" fill-opacity="0.45"/>
+  <rect x="396" y="362" width="102" height="14" rx="7" fill="#F5F5F5" fill-opacity="0.85"/>
+  <rect x="396" y="394" width="116" height="14" rx="7" fill="#A3A3A3" fill-opacity="0.8"/>
+  <rect x="396" y="426" width="94" height="14" rx="7" fill="#A3A3A3" fill-opacity="0.7"/>
+  <rect x="396" y="474" width="108" height="28" rx="14" fill="#FF2A2A" fill-opacity="0.32"/>
+  <rect x="622" y="258" width="406" height="334" rx="28" fill="#191010" stroke="#FF2A2A" stroke-opacity="0.24"/>
+  <path d="M684 518L744 416L800 476L860 356L930 518" stroke="#FF2A2A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="744" cy="416" r="14" fill="#F5F5F5"/>
+  <circle cx="800" cy="476" r="14" fill="#F5F5F5"/>
+  <circle cx="860" cy="356" r="14" fill="#F5F5F5"/>
+  <rect x="692" y="314" width="250" height="18" rx="9" fill="#FF3B3B" fill-opacity="0.4"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#130808"/>
+      <stop offset="0.58" stop-color="#0D0909"/>
+      <stop offset="1" stop-color="#180707"/>
+    </linearGradient>
+  </defs>
+</svg>
