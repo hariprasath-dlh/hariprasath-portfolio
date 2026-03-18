@@ -33,20 +33,27 @@ const Hero = () => {
   ]
 
   return (
-    <section id="home" className="relative">
+    <section id="home" className="relative min-h-screen">
+      {/* Background gradient base */}
       <div className="absolute inset-0 -z-20 bg-[linear-gradient(180deg,#0a0a0a_0%,#120707_52%,#140404_100%)]" />
 
-      <div className="absolute inset-x-0 bottom-0 top-0 -z-10">
+      {/* Image layer with overflow-hidden wrapper */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <img
+          src={profileImage}
+          alt="Hariprasath"
+          className="h-full w-full object-cover object-[center_top]"
+        />
+        {/* Left-to-right dark gradient for text readability */}
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `linear-gradient(90deg, rgba(10,10,10,0.94) 0%, rgba(10,10,10,0.82) 28%, rgba(10,10,10,0.38) 52%, rgba(10,10,10,0.05) 72%), url(${profileImage})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'right top',
-            backgroundSize: 'cover',
+            background: 'linear-gradient(90deg, rgba(10,10,10,0.94) 0%, rgba(10,10,10,0.82) 28%, rgba(10,10,10,0.38) 52%, rgba(10,10,10,0.05) 72%)',
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/12 to-transparent opacity-35" />
+        {/* Dark overlay for mobile readability (Step 8) */}
+        <div className="absolute inset-0 bg-black/30 sm:bg-black/10" />
+        {/* Bottom fade */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/45" />
         {/* Navbar-area gradient overlay for smooth merge */}
         <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/50 to-transparent" />
@@ -54,31 +61,35 @@ const Hero = () => {
         <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-black/18 to-transparent opacity-35" />
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 top-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(255,42,42,0.18),transparent_26%),radial-gradient(circle_at_bottom_right,rgba(255,59,59,0.16),transparent_30%)]" />
+      {/* Red radial accents */}
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(255,42,42,0.18),transparent_26%),radial-gradient(circle_at_bottom_right,rgba(255,59,59,0.16),transparent_30%)]" />
 
-      <div className="mx-auto flex min-h-screen max-w-[1440px] items-center px-6 pb-10 md:px-12 lg:px-20">
+      {/* Main content — responsive height + padding */}
+      <div className="mx-auto flex h-[90vh] max-w-[1440px] items-center px-4 pb-10 sm:h-screen sm:px-8 md:px-16 lg:px-20">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="flex max-w-[500px] flex-col gap-4"
         >
+          {/* Tamil quote — responsive text (Step 6) */}
           <div className="space-y-2">
             {tamilQuote.map((line) => (
               <p
                 key={line}
-                className="tamil-quote whitespace-nowrap text-2xl font-semibold leading-relaxed text-white sm:text-3xl md:text-4xl lg:text-[3.25rem]"
+                className="tamil-quote text-2xl font-semibold leading-relaxed text-white sm:text-4xl md:text-5xl lg:text-6xl"
               >
                 {line}
               </p>
             ))}
           </div>
 
+          {/* English quote — responsive text (Step 6) */}
           <div className="mt-2 space-y-2">
             {englishQuote.map((line) => (
               <p
                 key={line}
-                className="whitespace-nowrap text-sm leading-relaxed text-neutral-300 sm:text-base md:text-lg"
+                className="text-sm leading-relaxed text-neutral-300 sm:text-base md:text-lg"
               >
                 {line}
               </p>
@@ -87,12 +98,13 @@ const Hero = () => {
         </motion.div>
       </div>
 
+      {/* Name card */}
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-80px' }}
         transition={{ duration: 0.7 }}
-        className="relative z-20 mx-auto -mt-16 max-w-[1400px] px-6 pb-0 md:px-12 lg:px-20"
+        className="relative z-20 mx-auto -mt-16 max-w-[1400px] px-4 pb-0 sm:px-8 md:px-16 lg:px-20"
       >
         <div className="rounded-[2rem] bg-[linear-gradient(90deg,rgba(0,0,0,0.62)_0%,rgba(22,8,8,0.5)_48%,rgba(90,16,16,0.32)_100%)] px-6 py-8 shadow-lg shadow-black/30 backdrop-blur-lg sm:px-8" style={{ border: 'none' }}>
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
