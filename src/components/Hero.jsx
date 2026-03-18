@@ -10,12 +10,6 @@ import {
 import profileImage from '../assets/hariprasath.png'
 import { SITE_META, SOCIAL_LINKS } from '../utils/constants'
 
-const tamilQuote = [
-  'சிந்தனை கனவாக மாறும்...',
-  'கனவு செயலாக மாறும்...',
-  'செயலே வெற்றியாக மாறும்.',
-]
-
 const englishQuote = [
   'Thought becomes a dream.',
   'Dreams become action.',
@@ -33,59 +27,32 @@ const Hero = () => {
   ]
 
   return (
-    <section id="home" className="relative min-h-screen">
-      {/* Background gradient base */}
+    <section id="home" className="hero relative min-h-screen overflow-hidden pt-24 md:pt-28">
       <div className="absolute inset-0 -z-20 bg-[linear-gradient(180deg,#0a0a0a_0%,#120707_52%,#140404_100%)]" />
 
-      {/* Image layer with overflow-hidden wrapper */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <img
-          src={profileImage}
-          alt="Hariprasath"
-          className="h-full w-full object-cover object-[center_top]"
-        />
-        {/* Left-to-right dark gradient for text readability */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: 'linear-gradient(90deg, rgba(10,10,10,0.94) 0%, rgba(10,10,10,0.82) 28%, rgba(10,10,10,0.38) 52%, rgba(10,10,10,0.05) 72%)',
-          }}
-        />
-        {/* Dark overlay for mobile readability (Step 8) */}
-        <div className="absolute inset-0 bg-black/30 sm:bg-black/10" />
-        {/* Bottom fade */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/45" />
-        {/* Navbar-area gradient overlay for smooth merge */}
-        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/50 to-transparent" />
-        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-black/18 to-transparent opacity-35" />
-        <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-black/18 to-transparent opacity-35" />
-      </div>
+      <div
+        className="hero-image absolute right-0 top-0 -z-10 h-full w-full bg-cover bg-no-repeat bg-right-top opacity-40 md:bg-right-center md:opacity-90 lg:w-[60%]"
+        style={{ backgroundImage: `url(${profileImage})` }}
+      />
 
-      {/* Red radial accents */}
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(10,10,10,0.96)_0%,rgba(10,10,10,0.82)_28%,rgba(10,10,10,0.4)_52%,rgba(10,10,10,0.08)_72%)]" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(255,42,42,0.18),transparent_26%),radial-gradient(circle_at_bottom_right,rgba(255,59,59,0.16),transparent_30%)]" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-transparent to-black/45" />
 
-      {/* Main content — responsive height + padding */}
-      <div className="mx-auto flex h-[90vh] max-w-[1440px] items-center px-4 pb-10 sm:h-screen sm:px-8 md:px-16 lg:px-20">
+      <div className="mx-auto flex min-h-screen max-w-[1440px] items-center px-5 pb-10 sm:px-8 md:px-12 lg:px-20">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="flex max-w-[500px] flex-col gap-4"
+          className="hero-content flex w-full max-w-[500px] flex-col items-start gap-4 text-left"
         >
-          {/* Tamil quote — responsive text (Step 6) */}
-          <div className="space-y-2">
-            {tamilQuote.map((line) => (
-              <p
-                key={line}
-                className="tamil-quote text-2xl font-semibold leading-relaxed text-white sm:text-4xl md:text-5xl lg:text-6xl"
-              >
-                {line}
-              </p>
-            ))}
-          </div>
+          <h1 className="tamil-quote max-w-[500px] text-left text-[clamp(28px,5vw,64px)] font-semibold leading-[1.3] text-white">
+            சிந்தனை கனவாக மாறும்... <br />
+            கனவு செயலாக மாறும்... <br />
+            செயல் வெற்றியாக மாறும்.
+          </h1>
 
-          {/* English quote — responsive text (Step 6) */}
-          <div className="mt-2 space-y-2">
+          <div className="mt-2 space-y-2 text-left">
             {englishQuote.map((line) => (
               <p
                 key={line}
@@ -98,15 +65,14 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Name card */}
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-80px' }}
         transition={{ duration: 0.7 }}
-        className="relative z-20 mx-auto -mt-16 max-w-[1400px] px-4 pb-0 sm:px-8 md:px-16 lg:px-20"
+        className="relative z-20 mx-auto -mb-14 -mt-24 max-w-[1400px] px-5 pb-0 sm:px-8 md:-mb-16 md:-mt-20 md:px-12 lg:-mb-20 lg:-mt-24 lg:px-20"
       >
-        <div className="rounded-[2rem] bg-[linear-gradient(90deg,rgba(0,0,0,0.62)_0%,rgba(22,8,8,0.5)_48%,rgba(90,16,16,0.32)_100%)] px-6 py-8 shadow-lg shadow-black/30 backdrop-blur-lg sm:px-8" style={{ border: 'none' }}>
+        <div className="rounded-[2rem] bg-[linear-gradient(90deg,rgba(0,0,0,0.62)_0%,rgba(22,8,8,0.5)_48%,rgba(90,16,16,0.32)_100%)] px-6 py-8 shadow-lg shadow-black/30 backdrop-blur-lg sm:px-8">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <p className="text-2xl font-semibold tracking-[0.12em] text-zinc-50 sm:text-3xl lg:text-4xl">
