@@ -46,7 +46,13 @@ const aboutCards = [
     title: 'About Me as a Person',
     sections: [
       {
-        title: '',
+        title: 'A short intro:',
+        items: [
+          'My name is Hariprasath L V. I am currently pursuing my undergraduate degree in B.Tech Artificial Intelligence and Data Science at Dr. N.G.P Institute of Technology, Coimbatore. I completed my schooling from LKG to 12th grade at AVB Matric Higher Secondary School, Coimbatore, near NSN Palayam.',
+        ],
+      },
+      {
+        title: 'My style: ',
         items: [
           'Believe in continuous learning and self-improvement',
           'Enjoy exploring new ideas and experimenting',

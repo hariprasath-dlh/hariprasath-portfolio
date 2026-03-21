@@ -24,15 +24,26 @@ const floatingShapes = [
 
 const Activities = () => {
   const [selectedActivity, setSelectedActivity] = useState(null)
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleOpen = (activity) => {
+    setSelectedActivity(activity)
+    setIsOpen(true)
+  }
+
+  const handleClose = () => {
+    setIsOpen(false)
+    setSelectedActivity(null)
+  }
 
   useEffect(() => {
-    if (!selectedActivity) {
+    if (!isOpen) {
       return undefined
     }
 
     const handleEscape = (event) => {
       if (event.key === 'Escape') {
-        setSelectedActivity(null)
+        handleClose()
       }
     }
 
@@ -43,7 +54,7 @@ const Activities = () => {
       document.body.style.overflow = ''
       window.removeEventListener('keydown', handleEscape)
     }
-  }, [selectedActivity])
+  }, [isOpen])
 
   return (
     <>
@@ -63,7 +74,7 @@ const Activities = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-60px' }}
                 transition={{ duration: 0.55, delay: index * 0.08 }}
-                onClick={() => setSelectedActivity(activity)}
+                onClick={() => handleOpen(activity)}
                 className="overflow-hidden rounded-xl border border-red-400/20 bg-white/[0.04] text-left backdrop-blur-xl transition-all duration-300 hover:scale-[1.03] hover:border-red-400/35 hover:shadow-[0_0_30px_rgba(255,50,50,0.16)]"
               >
                 <div className="relative h-56 overflow-hidden">
@@ -93,12 +104,12 @@ const Activities = () => {
       </section>
 
       <AnimatePresence>
-        {selectedActivity && (
+        {isOpen && selectedActivity && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setSelectedActivity(null)}
+            onClick={handleClose}
             className="fixed inset-0 z-[70] bg-black/70 backdrop-blur"
           >
             <div className="flex min-h-full items-center justify-center p-4 sm:p-6 md:p-8">
@@ -123,7 +134,8 @@ const Activities = () => {
 
                 <button
                   type="button"
-                  onClick={() => setSelectedActivity(null)}
+                  onClick={handleClose}
+                  aria-label="Close activity modal"
                   className="absolute right-5 top-5 z-10 inline-flex h-10 w-10 items-center justify-center rounded-full border border-red-400/25 bg-black/40 text-red-300 transition-all duration-300 hover:bg-red-500/10"
                 >
                   <FaTimes />
