@@ -1,16 +1,83 @@
-# React + Vite
+# 🌐 Hariprasath L V – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Live Website:
+👉 https://hariprasath-dlh.github.io/hariprasath-portfolio/
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 👋 About This Portfolio
 
-## React Compiler
+This is my personal portfolio website built to showcase my skills, projects, and journey as a developer. It reflects not only my technical abilities but also my approach to design, problem-solving, and continuous learning.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The website is designed with a strong focus on **clean UI, smooth user experience, and responsiveness across all devices**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧑‍💻 About Me
+
+My name is **Hariprasath L V**, and I am currently pursuing my undergraduate degree in **B.Tech Artificial Intelligence and Data Science** at **Dr. N.G.P Institute of Technology, Coimbatore**.
+
+I completed my schooling from **LKG to 12th grade at AVB Matric Higher Secondary School, Coimbatore (near NSN Palayam)**.
+
+I am passionate about building meaningful projects, exploring new technologies, and continuously improving my skills step by step.
+
+---
+
+## ✨ Features
+
+* 🎨 Modern UI with **Neon Red + Glassmorphism design**
+* 📱 Fully **responsive design (Mobile, Tablet, Desktop)**
+* 🧠 Clean and structured layout for better readability
+* 🌟 Smooth animations and premium UI feel
+* 🧾 Dedicated sections for projects, skills, and activities
+* 🔗 Social media integration
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React.js, Vite
+* **Styling:** CSS (Custom, Responsive Design)
+* **Deployment:** GitHub Pages
+
+---
+
+## 📂 Sections Included
+
+* About Me
+* Projects
+* Skills
+* Activities
+* Contact
+
+Each section is designed to clearly present information in a simple and effective way.
+
+---
+
+## 📈 What I Learned
+
+While building this portfolio, I learned:
+
+* How to design **responsive layouts for all devices**
+* Handling **real-world UI/UX challenges**
+* Deploying a React app using **GitHub Pages**
+* Debugging issues like routing and performance
+* Improving design with **attention to detail**
+
+---
+
+## 🎯 Goal of This Portfolio
+
+This portfolio is not just a project — it represents my journey, consistency, and growth as a developer.
+
+I aim to continuously improve this portfolio by adding new projects, refining the UI, and enhancing user experience.
+
+---
+
+## 📬 Contact
+
+Feel free to connect with me through the links available on my portfolio website.
+
+---
+
+⭐ If you like this project, feel free to give it a star!
