@@ -22,16 +22,38 @@ const Skills = () => {
               className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-8 backdrop-blur-xl"
             >
               <h3 className="mb-6 text-lg font-semibold text-zinc-100">{column.title}</h3>
-              <div className="flex flex-wrap gap-3">
-                {column.items.map((skill) => (
-                  <span
-                    key={skill}
-                    className="rounded-full border border-red-400/30 px-4 py-2 text-sm text-red-300 transition-all hover:bg-red-400/10"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
+              {column.categories ? (
+                <div className="space-y-6">
+                  {column.categories.map((category) => (
+                    <div key={category.name}>
+                      <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-zinc-400">
+                        {category.name}
+                      </h4>
+                      <div className="flex flex-wrap gap-3">
+                        {category.items.map((skill) => (
+                          <span
+                            key={skill}
+                            className="rounded-full border border-red-400/30 px-4 py-2 text-sm text-red-300 transition-all hover:bg-red-400/10"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="flex flex-wrap gap-3">
+                  {column.items.map((skill) => (
+                    <span
+                      key={skill}
+                      className="rounded-full border border-red-400/30 px-4 py-2 text-sm text-red-300 transition-all hover:bg-red-400/10"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

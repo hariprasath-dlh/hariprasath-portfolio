@@ -1,23 +1,40 @@
 const skills = [
   {
     title: 'Skills I Know',
-    items: [
-      'Python',
-      'Java',
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'MySQL',
-      'VS Code',
-      'Figma',
-      'n8n',
-      'GitHub',
-      'Canva',
+    categories: [
+      {
+        name: 'Programming Languages',
+        items: ['Java', 'Python', 'JavaScript'],
+      },
+      {
+        name: 'Frontend',
+        items: ['HTML5', 'CSS3', 'React.js'],
+      },
+      {
+        name: 'Backend',
+        items: ['Node.js'],
+      },
+      {
+        name: 'Database',
+        items: ['MySQL'],
+      },
+      {
+        name: 'AI & Automation',
+        items: ['n8n', 'Prompt Engineering', 'Retrieval-Augmented Generation (RAG)'],
+      },
+      {
+        name: 'Developer Tools',
+        items: ['Git', 'GitHub', 'VS Code'],
+      },
+      {
+        name: 'Design',
+        items: ['Figma', 'Canva', 'Adobe Lightroom'],
+      },
     ],
   },
   {
     title: 'Skills Used in Projects',
-    items: ['REST API', 'FastAPI', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'TypeScript'],
+    items: ['REST APIs', 'Tailwind CSS', 'TypeScript', 'Vercel', 'Render'],
   },
 ]
 
