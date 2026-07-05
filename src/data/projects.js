@@ -32,6 +32,10 @@ import smartNotesOrganizer3 from '../assets/project-screenshots/smart-notes-orga
 import aiResumeBuilder1 from '../assets/project-screenshots/ai-resume-builder/1.jpg'
 import aiResumeBuilder2 from '../assets/project-screenshots/ai-resume-builder/2.jpg'
 import aiResumeBuilder3 from '../assets/project-screenshots/ai-resume-builder/3.jpg'
+import rootmind1 from '../assets/project-screenshots/rootmind/rootmind project 1.png'
+import rootmind2 from '../assets/project-screenshots/rootmind/rootmind project 2.png'
+import rootmind3 from '../assets/project-screenshots/rootmind/rootmind project 3.png'
+import rootmind4 from '../assets/project-screenshots/rootmind/rootmind project 4.png'
 
 const projects = [
   {
@@ -381,6 +385,51 @@ const projects = [
       'Building practical tools',
     ],
     images: [aiResumeBuilder1, aiResumeBuilder2, aiResumeBuilder3],
+  },
+  {
+    id: 'rootmind',
+    title: 'RootMind — Autonomous Multi-Agent AIOps Platform',
+    shortDescription:
+      'An autonomous incident response system that detects production crashes and resolves them in seconds without human intervention. Powered by a 5-agent AI pipeline to automate root cause analysis, code patching, and post-mortem reporting.',
+    fullDescription:
+      'RootMind is a full-stack, autonomous AIOps platform designed to modernize how engineering teams handle production incidents. Instead of relying on manual debugging, RootMind uses a multi-agent AI orchestration system to detect anomalies, trace root causes, generate code fixes, and document the incident automatically.',
+    problemStatement:
+      'When a production server crashes, traditional incident response is slow and manual. Engineers spend hours sifting through logs, identifying the broken commit, writing a fix, and documenting the post-mortem. This high Mean Time to Resolution (MTTR) leads to prolonged downtime, frustrated users, and significant revenue loss.',
+    features: [
+      'Anomaly Detector: Uses Machine Learning (Isolation Forest) to analyze telemetry metrics and detect anomalies.',
+      'RCA Agent: Uses RAG (Retrieval-Augmented Generation) and LLMs to search the GitHub codebase and identify the exact commit responsible for the incident.',
+      'Fix Suggester: Automatically generates a working code patch.',
+      'Post-Mortem Writer: Creates a professional incident report.',
+      'Slack Alerter: Sends real-time alerts with the root cause and proposed fix.',
+    ],
+    techStack: [
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'FastAPI',
+      'Python',
+      'LangGraph',
+      'Scikit-learn',
+      'Groq API / Llama 3',
+      'Qdrant',
+      'Neon PostgreSQL',
+      'GitHub REST API',
+      'Slack Webhooks',
+    ],
+    githubLink: 'https://github.com/hariprasath-dlh/rootmind',
+    linkedinPost:
+      'https://www.linkedin.com/posts/hariprasath-lv_ai-machinelearning-langgraph-ugcPost-7478089195308089344-BT45/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYPmcoBihbQ4aRc857DVLbaxoOXLWIV_-o',
+    liveLink: '',
+    whatILearned: [
+      'Multi-Agent AI architecture using LangGraph',
+      'Retrieval-Augmented Generation (RAG)',
+      'AI workflow orchestration',
+      'Full-stack React + FastAPI integration',
+      'Real-world AI system design',
+      'Async backend development',
+      'Enterprise AI application development',
+    ],
+    images: [rootmind1, rootmind2, rootmind3, rootmind4],
   },
 ]
 

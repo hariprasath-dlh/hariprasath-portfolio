@@ -151,6 +151,28 @@ const Activities = () => {
                     {selectedActivity.fullContent.map((paragraph) => (
                       <p key={paragraph}>{paragraph}</p>
                     ))}
+
+                    {selectedActivity.images?.length > 0 && (
+                      <div className="mt-6 pt-2">
+                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                          {selectedActivity.images.map((image, index) => (
+                            <motion.div
+                              key={image}
+                              initial={{ opacity: 0, y: 16 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.4, delay: index * 0.08 }}
+                              className="overflow-hidden rounded-xl shadow-[0_12px_24px_rgba(0,0,0,0.3)] border border-white/5"
+                            >
+                              <img
+                                src={image}
+                                alt={`${selectedActivity.title} gallery image ${index + 1}`}
+                                className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                              />
+                            </motion.div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </motion.div>

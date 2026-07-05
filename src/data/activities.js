@@ -1,6 +1,7 @@
 import interCollegeHackathonImage from '../assets/activity-photos/hackathon/1.jpg'
 import msmeHackathonImage from '../assets/activity-photos/msme/1.jpg'
 import aimHackathonImage from '../assets/activity-photos/sih/1.jpg'
+import agileWorkshopImage from '../assets/activity-photos/agile-workshop/Dscience workshop.jpeg'
 
 const activities = [
   {
@@ -45,6 +46,18 @@ const activities = [
       'This experience helped me learn many practical things beyond theory. I improved my understanding of real-time data handling, system design, and how different components like backend, communication protocols, and UI work together. I also learned how to manage time effectively, work in a team, and stay focused during long working hours.',
       'Overall, this hackathon gave me hands-on experience and increased my confidence in building real-world projects.',
     ],
+  },
+  {
+    id: 4,
+    title: 'Agile Development & Problem-Solving Workshop',
+    date: '2026',
+    description:
+      'Participated in a hands-on workshop conducted by the Descience Open Source Club focused on Agile development, problem statement analysis, and collaborative software development practices.',
+    image: agileWorkshopImage,
+    fullContent: [
+      'Participated in a workshop conducted by the Descience Open Source Club, where I learned how to effectively understand and pitch problem statements, gained an introduction to Agile Methodologies and collaborative development practices, and explored the fundamentals of vibe coding. As part of the workshop, I also collaborated with the team to build a small hands-on project, allowing me to apply the concepts learned in a practical environment.',
+    ],
+    images: [agileWorkshopImage],
   },
 ]
 
